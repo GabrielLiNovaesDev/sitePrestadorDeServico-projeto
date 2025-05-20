@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 97.06 98.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_420-2);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_420);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_420" data-name="Degradado sin nombre 420" x1="64.34" y1="93.8" x2="19.23" y2="19" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d59a4"/>
+      <stop offset=".17" stop-color="#4c5ea7"/>
+      <stop offset=".37" stop-color="#4c6cb0"/>
+      <stop offset=".59" stop-color="#4b84c0"/>
+      <stop offset=".82" stop-color="#4aa6d6"/>
+      <stop offset=".98" stop-color="#4ac3ea"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_420-2" data-name="Degradado sin nombre 420" x1="84.65" y1="51.1" x2="55.54" y2="2.83" xlink:href="#Degradado_sin_nombre_420"/>
+  </defs>
+  <path class="cls-2" d="M41.78,14.62C18.71,14.62,0,33.32,0,56.4s18.71,41.78,41.78,41.78,41.78-18.71,41.78-41.78S64.86,14.62,41.78,14.62ZM41.78,89.35c-18.2,0-32.95-14.75-32.95-32.95S23.59,23.45,41.78,23.45s32.95,14.75,32.95,32.95-14.75,32.95-32.95,32.95Z"/>
+  <path class="cls-1" d="M70.1,0c-14.89,0-26.96,12.07-26.96,26.96s12.07,26.96,26.96,26.96,26.96-12.07,26.96-26.96S84.99,0,70.1,0ZM70.1,48.23c-11.74,0-21.26-9.52-21.26-21.26s9.52-21.26,21.26-21.26,21.26,9.52,21.26,21.26-9.52,21.26-21.26,21.26Z"/>
+</svg>

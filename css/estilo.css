@@ -1,0 +1,1043 @@
+/* Fontes Personalizadas */
+@font-face {
+  font-family: "fonteomura";
+  src: url("../fonts/Nexa-Heavy.ttf") format("truetype"),
+    url("../fonts/Nexa-Heavy.woff") format("woff");
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "fonteomura", sans-serif;
+  color: #333;
+}
+
+/* Menu */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-bottom: 3px solid #4c66ac;
+}
+
+.site {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  background: url("../img/OmuraST.svg") no-repeat;
+  width: 60px;
+  /* Diminuindo o tamanho da logo */
+  height: 60px;
+  text-indent: -9999px;
+  margin: 5px 40px 5px 0;
+  /* Afastando a logo dos botões do menu */
+}
+
+/* Limitando o menu a 1902px */
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-site {
+  max-width: 1902px;
+  /* Limite de largura específico para o menu */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+.menu-site h1 {
+  background: url("../img/OmuraST.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  margin: 5px 40px 5px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.menu nav ul li {
+  text-transform: uppercase;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Animação com efeito de sombra e movimento */
+.menu nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #4c66ac;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.menu nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu nav ul li a:hover {
+  color: #4c66ac;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*  */
+
+.menu-site .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.btn a,
+.btn button {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4c66ac;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  font-family: "fonteomura", sans-serif;
+}
+
+.btn a:hover,
+.btn button:hover {
+  background-color: #3a5297;
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Fim menu */
+
+
+
+
+/* banner-sobre */
+.banner-sobre {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-sobre img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-banner-sobre {
+  display: flex;
+  margin-top: -200px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  color: #000;
+  flex-direction: column;
+}
+
+.texto-banner-sobre h2 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.texto-banner-sobre div {
+  display: flex;
+  align-items: center;
+  margin: 70px 50px;
+}
+
+/* fim banner-sobre */
+
+
+
+
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  z-index: -10;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.texto-banner {
+  margin-top: -450px;
+  position: absolute;
+  z-index: 1;
+}
+
+.texto-banner div {
+  display: flex;
+  align-items: center;
+  margin: 70px 50px;
+}
+
+main .texto-banner .site {
+  max-width: 1200px;
+
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+ 
+}
+
+main .texto-banner h4 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #4c66ac;
+}
+
+main .texto-banner h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #4c66ac;
+}
+
+main .texto-banner h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+main .texto-banner button {
+  margin-top: 100px;
+  padding: 10px 30px;
+  background-color: #4c66ac;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "fonteomura", sans-serif;
+}
+
+main .texto-banner button:hover {
+  background-color: #3a5297;
+}
+
+#texto-animado {
+  font-size: 28px;
+  color: #4c66ac;
+}
+
+/*  fim Banner */
+
+
+
+
+
+
+/* Inicio formulario de contato */
+.contato {
+  background: url("../img/fundo-claro.png") no-repeat center center;
+  /* Centraliza a imagem */
+  background-size: cover;
+  /* Ajusta a imagem completamente dentro do contêiner sem distorcer */
+  width: 100%;
+  /* Largura total do contêiner */
+  height: 100vh;
+  /* Altura fixa de 600px */
+  padding: 50px;
+  /* Espaçamento interno */
+  background-color: #f0f0f0;
+  /* Cor de fundo para áreas não cobertas */
+}
+
+.contato .site {
+  display: flex;
+  justify-content: space-between;
+  /* Espaçamento igual entre os itens */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  max-width: 1200px;
+  /* Define largura máxima do conteúdo */
+  margin: 0 auto;
+  /* Centraliza o conteúdo horizontalmente */
+  margin-top: 100px;
+  /* Espaçamento superior */
+}
+
+.contato-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.contato-info h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 150px;
+}
+
+.contato-info p {
+  margin: 10px 0 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.email-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.email-box span {
+  display: block;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.email-box a {
+  color: #6a5af9;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.contato-form {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 90%;
+}
+
+.contato-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-form input,
+.contato-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contato-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contato-form div input {
+  background: #6a5af9;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contato-form div input:hover {
+  background: #543ee0;
+}
+
+/* Fim formulario de contato */
+
+
+
+
+
+
+
+
+
+/* Galeria de Parceiros */
+.galeria-parceiros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  height: 90px;
+}
+
+.galeria-parceiros h2 {
+  font-size: 20px;
+  color: #4c66ac;
+}
+
+.galeria-parceiros .seta {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #4c66ac;
+  /* Cor da seta */
+  margin: 0 10px;
+}
+
+.galeria-parceiros img {
+  margin: 0 20px;
+  max-width: 150px;
+  height: 90px;
+}
+
+/* Fim Galeria de Parceiros */
+
+
+
+
+
+/* Seção de Soluções */
+.solucoes {
+  padding: 80px 0;
+  /* Espaçamento superior e inferior */
+  background-color: #fff;
+  /* Cor de fundo branca */
+  height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+.solucoes .site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solucoes .conteudo_solucoes {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.solucoes .conteudo_solucoes h3 {
+  font-size: 32px;
+  color: #4c66ac;
+  margin-bottom: 20px;
+}
+
+.solucoes .conteudo_solucoes h4 {
+  font-size: 25px;
+  color: #000;
+}
+
+.solucoes .conteudo_solucoes div {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.solucoes .box_solucoes div.ativo {
+  color: #3a5297;
+}
+
+.solucoes .box_solucoes div:hover {
+  color: #3a5297;
+  text-transform: 0.3s;
+}
+
+.solucoes .conteudo_solucoes p {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.box_solucoes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box_solucoes a {
+  text-decoration: none;
+  color: inherit;
+  width: 200px;
+  text-align: center;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.box_solucoes a:hover {
+  transform: scale(1.05);
+}
+
+.box_solucoes img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.box_solucoes p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Fim Seção de Soluções */
+
+
+
+
+/* Seção de page sobre */
+.page-sobre {
+  padding: 40px 0;
+  background-color: #fff;
+  height: 600px;
+}
+
+.page-sobre .site {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-sobre .conteudo_sobre {
+  text-align: center;
+}
+
+.page-sobre .conteudo_sobre h4 {
+  font-size: 25px;
+  color: #000;
+}
+
+.page-sobre .conteudo_sobre div {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.page-sobre .box_sobre a.ativo2 {
+  color: #3a5297;
+}
+
+.page-sobre .box_sobre a:hover {
+  color: #3a5297;
+  text-transform: 0.3s;
+}
+
+.page-sobre .conteudo_sobre p {
+  font-size: 16px;
+  color: #666;
+  margin: 20px auto;
+}
+
+.page-sobre .box_sobre {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.page-sobre .box_sobre a {
+  border: 2px solid #3a5297;
+  border-radius: 100px;
+  background-color: #f8f8f8;
+  text-decoration: none;
+  color: inherit;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-sobre .box_sobre a:hover {
+  transform: scale(1.05);
+}
+
+.page-sobre .box_sobre p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* fim page sobre */
+
+
+
+/* Seção Sobre */
+.sobre {
+  margin: 30px 0;
+}
+
+.sobre .site {
+  background: url("../img/banner-2.jpg") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  opacity: 90%;
+  border-radius: 20px;
+ 
+  text-align: center;
+  box-shadow: 30px 40px 60px rgb(51, 51, 51, 0.7);
+}
+
+.sobre .conteudo-sobre {
+  margin: 0 20px;
+  line-height: 1.5;
+}
+
+.sobre .conteudo-sobre h2 {
+  font-size: 32px;
+  color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.sobre .conteudo-sobre p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f2f2f2;
+}
+
+.sobre .conteudo-sobre a {
+  display: inline-block;
+  margin: 30px;
+  padding: 10px 30px;
+  background-color: #4c66ac;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sobre .conteudo-sobre a:hover {
+  background-color: #3a5297;
+}
+
+
+
+
+
+/* Seção de Serviços */
+.servico {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.servico .site {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.servico h2 {
+  font-size: 32px;
+  color: #4c66ac;
+  margin-bottom: 40px;
+}
+
+.servico-busca {
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.servico-busca div {
+  margin: 20px;
+  text-align: left;
+}
+
+.servico-busca img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* Mantém a proporção e cobre a área */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px rgb(51, 51, 51, 0.7);
+}
+
+.servico-busca h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #4c66ac;
+}
+
+.servico-busca p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.servico-busca .btn {
+  padding: 10px 20px;
+  background-color: #4c66ac;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-family: "fonteomura", sans-serif;
+}
+
+.servico-busca .btn:hover {
+  background-color: #3a5297;
+}
+
+main .slick-prev::before,
+main .slick-prev {
+  display: none;
+}
+
+main .slick-next::before,
+main .slick-next {
+  display: none;
+}
+
+
+
+/* ---------------------------------------- */
+/* valores-sobre */
+.valores_sobre {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+.valores_sobre .site {
+  margin: 0 auto;
+}
+
+.valores_sobre h2 {
+  font-size: 28px;
+  color: #4c66ac;
+}
+
+.valores-sobre {
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.5;
+}
+
+.valores-sobre div {
+  width: 275px;
+  margin: 20px;
+  text-align: left;
+}
+
+.valores-sobre img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* Mantém a proporção e cobre a área */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px rgb(51, 51, 51, 0.7);
+}
+
+.valores-sobre h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #4c66ac;
+}
+
+.valores-sobre p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* Seção Social e Contrate */
+.servico-contrate {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.servico-contrate .site {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servico-contrate .rede-social {
+  text-align: center;
+}
+
+.servico-contrate .rede-social h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.servico-contrate .rede-social h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.servico-contrate .rede-social img {
+  margin: 0 10px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.servico-contrate .contrate {
+  text-align: center;
+}
+
+.servico-contrate .contrate h2 {
+  font-size: 28px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #4c66ac;
+}
+
+.servico-contrate button {
+  padding: 10px 30px;
+  background-color: #4c66ac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "fonteomura", sans-serif;
+}
+
+.servico-contrate button:hover {
+  background-color: #3a5297;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+}
+
+.rodape .site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rodape p {
+  font-size: 14px;
+}
+
+.rodape .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  margin: 0 20px;
+}
+
+.rodape .links a:hover {
+  color: #4c66ac;
+}
+
+/* RESPONSIVIDADE */
+
+
+
+/* Estilos base (para todas as telas) */
+/* ... (seus estilos base aqui) ... */
+
+/* Media query para notebooks (1024px) */
+@media (max-width: 1024px) {
+  /* Ajustes para o menu */
+  .menu nav ul {
+    gap: 30px; /* Reduz o espaçamento entre os itens do menu */
+  }
+
+  /* Ajustes para o banner */
+  .texto-banner h2 {
+    font-size: 36px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .texto-banner h4 {
+    font-size: 28px; /* Reduz o tamanho da fonte do subtítulo */
+  }
+
+  /* Ajustes para o formulário de contato */
+  .contato .site {
+    flex-direction: column; /* Altera o layout para coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .contato-info h1 {
+    margin-bottom: 50px; /* Reduz o espaçamento inferior */
+  }
+
+  /* Ajustes para a seção de soluções */
+  .solucoes {
+    height: auto; /* Ajusta a altura automaticamente */
+    padding: 40px 0; /* Reduz o espaçamento superior e inferior */
+  }
+
+  .box_solucoes a {
+    width: 150px; /* Reduz a largura dos itens */
+  }
+
+  /* Ajustes para a seção de serviços */
+  .servico-busca img {
+    width: 250px; /* Reduz a largura das imagens */
+    height: 150px; /* Reduz a altura das imagens */
+  }
+}
+
+/* Media query para tablets (770px) */
+@media (max-width: 770px) {
+  /* Ajustes para o menu */
+  .menu nav ul {
+    gap: 20px; /* Reduz ainda mais o espaçamento entre os itens do menu */
+  }
+  
+  /* Ajustes para o banner */
+  .texto-banner h2 {
+    font-size: 28px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .texto-banner h4 {
+    font-size: 24px; /* Reduz o tamanho da fonte do subtítulo */
+  }
+
+  /* Ajustes para o formulário de contato */
+  .contato-form {
+    width: 100%; /* Faz o formulário ocupar toda a largura */
+  }
+
+  /* Ajustes para a seção de soluções */
+  .solucoes .conteudo_solucoes h3 {
+    font-size: 28px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .solucoes .conteudo_solucoes h4 {
+    font-size: 20px; /* Reduz o tamanho da fonte do subtítulo */
+  }
+
+  .box_solucoes a {
+    width: 120px; /* Reduz ainda mais a largura dos itens */
+  }
+
+  /* Ajustes para a seção de serviços */
+  .servico-busca {
+    flex-direction: column; /* Altera o layout para coluna */
+  }
+
+  .servico-busca img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+}
+
+/* Media query para celulares (420px) */
+@media (max-width: 420px) {
+  /* Ajustes para o menu */
+  .menu nav ul {
+    gap: 10px; /* Reduz ao mínimo o espaçamento entre os itens do menu */
+  }
+
+  /* Ajustes para o banner */
+  .texto-banner h2 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .texto-banner h4 {
+    font-size: 20px; /* Reduz o tamanho da fonte do subtítulo */
+  }
+
+  /* Ajustes para o formulário de contato */
+  .contato-info h1 {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .contato-form {
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  /* Ajustes para a seção de soluções */
+  .solucoes .conteudo_solucoes h3 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .solucoes .conteudo_solucoes h4 {
+    font-size: 18px; /* Reduz o tamanho da fonte do subtítulo */
+  }
+
+  .box_solucoes a {
+    width: 100px; /* Reduz ao mínimo a largura dos itens */
+  }
+ 
+
+  /* Ajustes para a seção de serviços */
+  .servico-busca img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .servico-busca h3 {
+    font-size: 20px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .servico-busca p {
+    font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+  }
+
+  /* Ajustes para o rodapé */
+  .rodape .site {
+    flex-direction: column; /* Altera o layout para coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .rodape .links a {
+    margin: 10px 0; /* Reduz o espaçamento entre os links */
+  }
+}
